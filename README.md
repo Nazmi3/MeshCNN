@@ -17,10 +17,10 @@ The code was written by [Rana Hanocka](https://www.cs.tau.ac.il/~hanocka/) and [
 ### Installation
 - Clone this repo:
 ```bash
-git clone https://github.com/ranahanocka/MeshCNN.git
+git clone https://github.com/Nazmi3/MeshCNN.git
 cd MeshCNN
 ```
-- Install dependencies: [PyTorch](https://pytorch.org/) version 1.2. <i> Optional </i>: [tensorboardX](https://github.com/lanpa/tensorboardX) for training plots.
+- Install dependencies: [PyTorch](https://pytorch.org/) version 1.2 and follow requirement.txt. <i> Optional </i>: [tensorboardX](https://github.com/lanpa/tensorboardX) for training plots.
   - Via new conda environment `conda env create -f environment.yml` (creates an environment called meshcnn)
   
 ### 3D Shape Classification on SHREC

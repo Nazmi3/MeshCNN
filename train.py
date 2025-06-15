@@ -14,8 +14,9 @@ if __name__ == '__main__':
     model = create_model(opt)
     writer = Writer(opt)
     total_steps = 0
+    epoch_total = opt.niter + opt.niter_decay
 
-    for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
+    for epoch in range(opt.epoch_count, epoch_total + 1):
         epoch_start_time = time.time()
         iter_data_time = time.time()
         epoch_iter = 0
@@ -48,7 +49,7 @@ if __name__ == '__main__':
             model.save_network(epoch)
 
         print('End of epoch %d / %d \t Time Taken: %d sec' %
-              (epoch, opt.niter + opt.niter_decay, time.time() - epoch_start_time))
+              (epoch, epoch_total, time.time() - epoch_start_time))
         model.update_learning_rate()
         if opt.verbose_plot:
             writer.plot_model_wts(model, epoch)

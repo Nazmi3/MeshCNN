@@ -7,7 +7,5 @@ authors = [
     {name = "Nazmi", email = "nazmiryuki@gmail.com"}
 ]
 dependencies = [
-    "numpy==1.23.1",
-    "matplotlib==3.7"
 ]
 

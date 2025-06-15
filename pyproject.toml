@@ -1,0 +1,13 @@
+[project]
+name = "my_package"
+version = "0.1.0"
+description = "A sample Python project"
+readme = "README.md"
+authors = [
+    {name = "Nazmi", email = "nazmiryuki@gmail.com"}
+]
+dependencies = [
+    "numpy==1.23.1",
+    "matplotlib==3.7"
+]
+
